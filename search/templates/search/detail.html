@@ -1,0 +1,7 @@
+{% extends 'search/base.html' %}
+{% block body %}
+	{% for r in result %}
+		<a href="{% url 'search:favorite' r %}" >{{r}}</a>
+		<br>
+	{% endfor %}	
+{% endblock %}
